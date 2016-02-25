@@ -33,6 +33,7 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.renderWindowControl1 = new Kitware.VTK.RenderWindowControl();
             this.button2 = new System.Windows.Forms.Button();
+            this.textFrameNr = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -72,17 +73,25 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.button2.Location = new System.Drawing.Point(352, 13);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(134, 23);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Wyświetl";
+            this.button2.Text = "Wyświetl klatkę nr:";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textFrameNr
+            // 
+            this.textFrameNr.Location = new System.Drawing.Point(492, 15);
+            this.textFrameNr.Name = "textFrameNr";
+            this.textFrameNr.Size = new System.Drawing.Size(43, 20);
+            this.textFrameNr.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(759, 492);
+            this.Controls.Add(this.textFrameNr);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.renderWindowControl1);
             this.Controls.Add(this.richTextBox1);
@@ -91,6 +100,7 @@
             this.Text = "VTK-C3D EDITOR";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -99,8 +109,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private Kitware.VTK.RenderWindowControl renderWindowControl1;
+        public Kitware.VTK.RenderWindowControl renderWindowControl1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textFrameNr;
     }
 }
 
